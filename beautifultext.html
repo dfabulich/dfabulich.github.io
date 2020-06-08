@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://idm.me.uk/textrenaissance/typography.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+    
+    <title>Beautiful Text &#8212; A Cheat Sheet for Better Typography</title>
+    <style type="text/css" media="screen">
+      body {
+        margin: 0;
+        font-size: 14px;
+        font-family: sans-serif;
+      }
+      #indent {
+        margin: 20px 20px 0 20px;
+      }
+      #type {
+        font-family: "Georgia", serif;
+      }
+      #line_spacing {
+        width: 450px;
+        margin: 0 auto;
+      }
+      #line_spacing p {
+        line-height: 1.475em;
+      }
+      #indent_color {
+        background: #f7f4f1;
+        color: #543;
+      }
+      #color {
+        font-family: "Georgia", serif;
+        width: 450px;
+        margin: 20px auto;
+        padding-top: 20px;
+      }
+      #color p {
+        line-height: 1.475em;
+      }
+      #paragraphs p {
+        margin: 0;
+      }
+      #paragraphs p + p {
+        text-indent: 1em;
+      }
+      #variations h1 {
+        margin: 1em 0 0.5em 0;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 3pt;
+        font-size: 22px;
+      } 
+      #lead_in h1 + p:first-letter {
+        float: left;
+        display: block;
+        padding-top: 4px;
+        padding-right: 1px;
+        font-size: 46px;
+      }
+      .lead_in {
+        font-variant: small-caps;
+        letter-spacing: 1pt;
+      }
+      #copyright {
+        margin-top: 20px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+<div id="indent">
+    <header>
+      <h1>Beautiful Text</h1>
+      <h2>A Cheat Sheet for Better Typography</h2>
+      <h3>Ian Millington</h3>
+      
+      <p>
+        This document details a bunch of classical rules for typesetting
+        text. That is, for designing how text will look and how it will
+        be laid out on the page. These rules are <em>classical</em> &#8211;
+        they are drawn from the long tradition of book typography, and aren't
+        specifically written for the web. They are the rules that any good
+        book designer starts from and are given roughly in order of importance
+        and I've tried to roughly honor each rule as I describe it, although
+        that isn't always visible. The page is written in HTML 5, so legacy
+        browsers may not recognise the style rules.
+      </p>
+      <p>
+        If you find your text seems to be ugly or not feel quite sharp enough,
+        follow these rules and your
+        typography will immediately look more professional. Of course, a 
+        really good typographer will be able to break all these rules and create
+        something great, but then I'm not a great typographer, so if you are,
+        there's no point in you reading this!
+      </p>
+      <p>
+        Most of the content comes from Jan Tschichold's essays and 
+        practice. He was both an excellent typographer and a scholar and
+        codifier of classical techniques. 
+      </p>
+    </header>
+
+<div id="type">
+    <section>
+      <h1>Type Selection</h1>
+      
+      <p>
+        Use a serif typeface for good looking body text. First-language
+        English readers recognize words by their shape, a particular pattern
+        of ink (or pixels), of whitespace, of length of ascenders and 
+        descender and of word-length. This skill has been honed over the 
+        many years it took for you to learn to read
+        and is hardwired into your brain. As a designer it makes sense to 
+        leverage this brain wiring, and not to fight it. 
+      </p>
+      
+      <p>
+        Sans-serif faces can also be very readable, when they follow the 
+        proportions of classic serif style. At small pixel sizes they
+        may even be clearer (for reasons I'll cover below). But they will 
+        never look as elegant.
+      </p>
+      <p>
+        Avoid
+        typefaces with non-classical proportions. In particular 'condensed'
+        and 'geometric' faces
+        are popular at the moment (the former use thinner letter shapes, the
+        latter have wider variety in their letter width, and often have
+        a perfectly circular O). These are not
+        good for reading, restrict them to titles.
+      </p>
+      <p>
+        For reading on-screen, the
+        tiny spaces in the middle of letters such as 'e' or 's' (called 
+        "counters" in the lingo) can easily be lost, so typefaces for screen
+        reading tend to have bigger lowercase letters and smaller ascenders 
+        and descenders (the bits that stick up and down in letters such as 'd'
+        and 'p'). This is called a large "x-height", and for some 
+        screen fonts, the height of the 'x' character may be 3/4 the height of
+        'X'. For printed output large x-height appears immature and inelegant
+        and ratios around 3/5 are common.
+      </p>
+      <p>
+        Use one and only one font for the body text, and one more for titles
+        if you have to. Classic book typography usually requires only one.
+      </p>
+    </section>
+    
+<div id="line_spacing">
+    <section>
+      <h1>Line-Spacing and Line Width</h1>
+      
+      <p>
+        When you read a block of text, your eye dances along the line,
+        stopping every couple of words long enough for your brain to 
+        recognize the surrounding shapes (this process is called "fixation").
+        This process is relatively simple until you get to the end of the
+        line, when the eye has to scan back to its next fixation. This
+        process takes a relatively long time, so anything you can do to
+        make it faster helps.
+      </p>
+      
+      <p>
+        Your eye scans back using the little strip of whitespace between
+        each line. Increasing this whitespace makes it easier to read. Always
+        separate your lines of text a little wider than normal (this is called 
+        "setting" your text, so you can have text that is narrow set, or wide 
+        set). The easiest way to immediately tell a piece
+        of text created by a typographic novice is that the text is set too
+        close.
+        </p>
+      <p>Having said that, if you set your text too wide then the lines won't 
+        naturally flow into one another, and this breaks up the rhythm of 
+        reading. Double spacing is often too wide, single is always far to small. The 
+        precise spacing has to be done by eye: but if you are new to this, then 
+        err on the side of wider line-spacing.</p><p> Line spacing is sometimes called
+        "leading", because in the days of hand-set metal type it was achieved
+        with a thin strip of lead between each row of letters.
+        Unfortunately you measure "leading" differently to "line-spacing", and
+        most software uses the latter measurement (even though some still 
+        call it "leading"). Since we aren't really going to be doing leading I'd advise
+        against using the term.
+      </p>
+      
+      <p>
+        The second factor in helping the eye pick up the start of the next
+        line is line-length. If your lines are too long, then the eye has
+        to work harder to scan back along the white space to pick up the
+        next line. If they are too short then your eye has to pick up the
+        next line more frequently. Both of these extremes make reading harder.
+        It has been found that a line of between 8 and 12 words is the
+        best compromise. This is why newspapers and magazines use columns.
+        Multiple columns are a big pain with scrolling on-screen, but filling 
+        the width of a HTML page in text is a recipe for unreadable text.
+      </p>
+
+     <p>
+       For both of these reasons, a general rule is to have more line-spacing
+       for longer lines.
+     </p>
+    </section>
+    
+    <div id="capitals">
+        <section>
+          <h1>Spacing Capitals</h1>
+
+          <p>In a good typeface,
+            capitals are never designed to sit next to one
+            another in words. The font designer will structure them with spacing
+            rules (called "kerning") for acronyms. When used in titles, for 
+            example, they will be <em>far</em> too close together. Remember
+            you have a hardwired brain for reading lowercase. But for upper-case
+            you will have to process much more off each word. Having more space
+            between upper-case letters makes this easier (conversely if you letter
+            space lower-case you break the brain's ability to scan the word, making
+            it far <em>harder</em> to read).
+          </p>
+
+          <p>
+            All text in capitals should be set with extra letter-spacing, and that
+            absolutely includes text in small-caps. Normally software allows you
+            to do this either as a percentage of the text-size, or by adding
+            a point or two of spacing between letters. Proper typography needs
+            capitals to be manually spaced, because of all sorts of complex 
+            interactions between the capital forms. But this is almost impossible
+            for most folks to do well. Even so, some spacing is much, much better
+            than none. In CSS this can be achieved with the 
+            <code>letter-spacing</code> property.
+          </p>
+
+          <p>
+            Properly spaced capitals for headings can be smaller than you might
+            think too. You don't have to double the size of the body text to
+            get a good looking heading.
+          </p>
+        </section>
+            
+</div></div></div></div>
+<div id="indent_color">
+<div id="color">
+    <section>
+      <h1>Off-Black Text, Off-White Ground</h1>
+        
+      <p>
+        The way our brain is optimized to recognize word shapes is also the main reason
+        to only use dark text on a light background. Anything else will confuse
+        the brain's dedicated word detectors and will make the reader 
+        work harder. It isn't <em>difficult</em> to read inverted text, but it 
+        involves more work than regular text.
+      </p>
+      
+      <p>
+        But that doesn't mean black-on-white. If you look at a classic book
+        typography, you'll see the pages are really quite off-white. They
+        are creams, light browns, or pale oranges. The inks also aren't 
+        jet-black, they are slightly transparent, picking up the color of the 
+        underlying paper. They <em>appear</em> black, but only in comparison.
+        The most beautiful books have really rather dark pages, and really
+        quite transparent inks. The contrast doesn't have to be so high, 
+        as long as the patterns of light and dark are not obscured.
+      </p>
+      
+      <p>
+        In book design near-white paper is only ever justified for full-color 
+        work. Then you do want black ink, because otherwise the color of the
+        ink will show up next to blacks in the artwork. 
+      </p>
+      
+      <p>
+        One of the main reasons
+        it is hard to read on-screen is the sheer amount of contrast that
+        a screen provides. Because the whites are actively pumping out light,
+        rather than just reflecting it,
+        the contrast between black and white is far greater
+        than for the printed page. This is fatiguing. If you want to 
+        read comfortably, reduce the contrast. But not too much &#8211;
+        otherwise letterforms will begin to be indistinct and the brain
+        will have to work harder to recognize the word forms.
+      </p>
+    </section>
+    
+<div id="paragraphs">
+    <section>
+      <h1>Separating Paragraphs</h1>
+      
+      <p>
+        Paragraphs are units of thought within a piece of writing. Originally
+        they were indicated with a special symbol, the pilcrow
+        (<span style="color:#c00">¶</span>). These
+        symbols were to be written in red. The job of adding the red text
+        to the page was often done by a different person (the "rubricator",
+        also where we get "rubric"). To make the paragraph break clearer
+        a new line might also be started. The primary scribe would leave a 
+        gap for the
+        pilcrow. With the omission of the pilcrow, we ended up with
+        the newline plus indent form we have today.
+      </p>
+      <p>
+        Typewriter users found it inconvenient and inconsistent to produce
+        this indent (a tab was often far too large, and getting just the right
+        number of spaces was error prone), so used blank lines. Early WYSIWYG
+        word processors found it easier to do the same rather than implement
+        the special logic needed to handle paragraph indents with justified
+        text. So it became common. 
+      </p>
+      <p>
+        CSS now makes it simple to use proper paragraph indents, with a rule
+        such as <code>p + p { text-indent: 1em; }</code>. And all 
+        word-processors now support it. The optimum indent should be about
+        the same size as the spacing between consecutive lines. For wide
+        set text this is a bit too large, so a good rule of thumb is to use
+        the same width as the size of the typeface (i.e. 14pt indent for 14pt
+        text). This quantity is also called the 'em', hence the CSS rule above.
+      </p>
+      <p>
+        Good typography does not use 
+        vertical space for paragraph breaks because it breaks the rhythm of 
+        reading:
+        as your eye scans back to the start of each line, your brain adjusts
+        to the amount of vertical change needed to hit the right spot. As
+        you continue reading this process gets faster and faster as your brain
+        gets better at guessing where the next line will start. Paragraph
+        spacing breaks this rhythm and makes reading harder.
+      </p>
+    </section>
+    
+<div id="variations">
+    <section>
+      <h1>Font Variations</h1>
+      
+      <p>
+        There are only two font variations needed in good typography, and they
+        are <em>italic</em> and small capitals. Italic is intended to represent 
+        something written
+        by hand, as such it has a more flowing form. In some fonts 
+        (particularly Sans-serif) it is generated by skewing the letters
+        sideways. This isn't italic it is an oblique, and is very inferior.
+        Small capitals is used as lead-in to a block of text, and for
+        certain common acronyms written without periods (such as AD, or BC).
+        Unfortunately most free and bundled typefaces don't have small-caps
+        and most word-processors fake it with using capital letters at a 
+        smaller size. This is universally disastrous, as every capital
+        will then appear to be in bold relative to the surrounding text, 
+        the height of the small-caps will rarely match the x-height of the
+        surrounding lowercase, and the letter-spacing of the small caps
+        will be plain ugly. For that reason I'd advise you only to use 
+        small-caps if you know you have a genuine small-caps in your font, 
+        and your target display can use it (which pretty much excludes 
+        web-use).
+      </p> 
+            
+      <p>
+        Except in specialist text forms such as encyclopedia, indices, or
+        dictionaries, bold is rarely used. It isn't clear what the difference
+        should be. Why do you need two categories of emphasis (HTML's 
+        distinction between emphasis and "strong" is entirely artificial).
+        Bold titles are beloved by HTML, but they are very rare in the text
+        of books. A larger point size is perfectly adequate.
+      </p>
+      
+      <p>
+        Underlined text is a complete anachronism. It is an editor's symbol
+        to indicate that a piece of text should be made italic. It was then
+        used in typewriters to indicate the same (typewriters couldn't type
+        in italic, of course). It is now associated with hypertext links
+        on the web, where it is useful, although is often redundant when
+        the link text also has a different color. Regardless, the underline
+        will be far too close to the text, ruining its shape. A better approach
+        is to turn off underlining and use a CSS <code>bottom-border</code> with
+        a tiny bit of padding. Even better is to use an underline color with 
+        lower contrast (which you can do for a border, but not for a
+        regular underline), an underline that appears only on hover, or a 
+        dotted underline.
+      </p>
+    </section>
+    
+<div id="justified">
+    <section>
+      <h1>Justification and Hyphenation</h1>
+      
+      <p>
+        Justification is the process of giving text a smooth right-margin.
+        It is very common in good typography and almost universal in books.
+        Its effect is to give the overall text an improved shape and make
+        the page more beautiful. By giving you a consistent jump back to the
+        start of the next line, it could theoretically improve readability,
+        unfortunately its drawbacks (as we'll see) more than make up for this
+        improvement. So its only remaining purpose is the beauty of the page.
+      </p>
+      <p>
+        Unfortunately, justified text has some more significant problems.
+        In order to justify text, you change the spacing between words. This
+        is ideally a change by a few percent and is quite unnoticeable. 
+        If you have
+        short lines, or long words, there may be no convenient break point,
+        or there may be few inter-word spaces to increase. You end up with
+        very large word spaces, which at best break the flow of the reading,
+        but at worse (combined with small line-spacing) produce distracting
+        vertical 
+        white-space artifacts in the page (called "rivers of white"). If
+        your lines are short enough to be readable, then the chances are you
+        will hit this problem, and end up with really ugly text. Rivers of
+        white is another great give-away for sloppy or amateurish typography.
+      </p>
+        
+      <p>
+        The solution that has been used for thousands of years is to sacrifice
+        some more readability and use hyphenation to break words falling at 
+        the end of the line. A hyphenated word looses all of its shape, and so
+        is much harder to read. But this is only the occasional word, and the
+        overall effect is more pleasing on the eye.
+</p><p>
+        Performing the hyphenation is a really hard problem (fine typography 
+        still relies on manual hyphenation at
+        times, most well designed books use pretty sophisticated algorithmic
+        approaches). Historically texts have even been rewritten to allow 
+        for better patterns of line-breaking. Unfortunately browsers don't do 
+        hyphenation, so you're caught between two evils: either use too-long 
+        lines, or face the ugly rivers of white effect. The solution is simple: 
+        if you don't have
+        access to good hyphenation, or longer line-lengths, use a left text 
+        align (also called "ragged right") which is the default for HTML. 
+        Current full
+        justification on the web just isn't good enough.
+      </p>
+    </section>
+    
+    <section>
+      <h1>Line Breaks<br>for Longer Titles</h1>
+      
+      <p>
+        For titles, strap lines or section headings, never allow your line
+        to be broken automatically by the computer. Always use manual
+        line-breaks. Line-breaks should be added in meaningful
+        locations to allow each resulting line to cohere.
+      </p>
+      
+      <p>
+        So a computer might break "The Best Places to Fish in Western Alaska" as
+        "The Best Places to Fish in Western / Alaska", you want 
+        "The Best Places to Fish / in Western Alaska". Or
+        "The Best Places / to Fish in Western Alaska" (the second version
+        is less
+        clear for the flow of meaning, but may be visually better because
+        the bottom of the two lines will be slightly longer, and
+        this is a more "stable" and visually pleasing text shape). 
+        This was never an issue before
+        automatic word wrapping in computers. Again it indicates lazy 
+        typesetting.
+      </p>
+    </section>
+    
+<div id="lead_in">
+    <section>
+      <h1>Lead-in for First Lines</h1>
+      
+      <p><span class="lead_in">Good books and magazines</span>
+        mark the introduction of a large chunk of text with
+        some typographical distinction. This derives from the practice of
+        indicating the start of a chapter (originally a bible chapter) with
+        a larger illuminated letter. This has transformed into the use of the 
+        drop-cap. Drop caps are elegant, but they are hard to control. They
+        should take two or three lines of space, should sit on the same baseline 
+        as
+        the text in the second or third line and extend to the top of the 
+        capitals
+        in the first line. Many word processors use separate text-boxes to
+        house drop-caps, and make this exact positioning almost impossible.
+        Faking a drop-cap on the web is possible using <code>float: left</code>,
+        but is even more difficult to get lined up correctly (my attempt on this
+        page works on some browsers, but is in the wrong location on others).
+      </p>
+      
+      <p>
+        After the drop capital it is customary to set the first few words in
+        small capitals. Ideally you should choose a set of words that forms
+        one unit of meaning, 
+        some software chooses a particular number, which can detract
+        from the flow. If you don't have small-capitals, then don't allow
+        your software to fake them. I've used bold in the past, but that is
+        also fairly ugly. Maybe it is better to do nothing.
+      </p>
+      
+      <p>
+        In HTML you can set the whole first line in a different form. This
+        is far more than you'd expect to see in a book, but can work. I've
+        found that setting the lead-in as bold looks better for a whole
+        line than a section. Your mileage may vary.
+      </p>
+    </section>
+    
+    <div id="copyright">
+      <p>
+        Compiled by Ian Millington.<br>Provided under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0
+        Attribution License</a>.
+      </p>      
+    </div>
+</div></div></div></div></div></div>
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="./beautifultext_files/ga.js" type="text/javascript"></script><script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-446844-4");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+
+  
+</body></html>
