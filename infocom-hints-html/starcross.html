@@ -39,6 +39,15 @@ img.coverart {
 hr {
     clear: both;
 }
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+td, th {
+    border: solid;
+    padding: 0.5em 1ch;
+}
 </style>
 </head>
 <body>
@@ -187,7 +196,7 @@ hr {
                     </span></li>
 
                     <li><span class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite">
-                      <span aria-hidden="true">For UM08: COMPUTER, R IS 150, THETA IS 210, PHI IS 017 or </span>
+                      <span aria-hidden="true">For UM08: COMPUTER, R IS 150, THETA IS 210, PHI IS 017 or <div>   COMPUTER, R IS 150.</div><div>   COMPUTER, THETA IS 210.</div><div>   COMPUTER, PHI IS 17.</div><div>Of course, the alternate way of speaking to the computer will work just as well (TELL COMPUTER "R IS 150..."). When the computer asks for confirmation, type COMPUTER, CONFIRM.</div></span>
                     </span></li>
 </ol>
 
@@ -1719,30 +1728,26 @@ hr {
 
 <h2 id="11">How All Points Are Earned</h2>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><p>(Use only as a last resort!)</p><pre>  Item of value       value   where it is found:
-  black crystal rod    25     reward for solving the Red Dock puzzle
-  red crystal rod      25     in the Rat-ant nest
-  brown crystal rod    25     hanging from the Alien Chief's neck
-  yellow crystal rod   25     the Spider has it
-  blue crystal rod     25     in the silvery sphere
-  green crystal rod    25     in the trash bin
-  violet crystal rod   25     in the space suit of the dead Weasel Alien
-  pink crystal rod     25     in the scorched Alien reptile's hand
-  gold crystal rod     25     computer output upon successful start-up
-  white crystal rod    25     floating in the Drive Bubble
-  clear crystal rod    25     in the projector in the Observatory
-  silver crystal rod   25     in the ray gun barrel
-Other Points
-You receive 25 points for:
-  successfully reaching the Red Dock
-  entering the Drive Bubble
-  changing the ship's course
-  initiating the proper course to Earth</pre></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><p>(Use only as a last resort!)</p><table><tr><th>Item of value</th><th>value</th><th>where it is found:</th></tr>
+<tr><td>black crystal rod</td><td>25</td><td>reward for solving the Red Dock puzzle</td></tr>
+<tr><td>red crystal rod</td><td>25</td><td>in the Rat-ant nest</td></tr>
+<tr><td>brown crystal rod</td><td>25</td><td>hanging from the Alien Chief's neck</td></tr>
+<tr><td>yellow crystal rod</td><td>25</td><td>the Spider has it</td></tr>
+<tr><td>blue crystal rod</td><td>25</td><td>in the silvery sphere</td></tr>
+<tr><td>green crystal rod</td><td>25</td><td>in the trash bin</td></tr>
+<tr><td>violet crystal rod</td><td>25</td><td>in the space suit of the dead Weasel Alien</td></tr>
+<tr><td>pink crystal rod</td><td>25</td><td>in the scorched Alien reptile's hand</td></tr>
+<tr><td>gold crystal rod</td><td>25</td><td>computer output upon successful start-up</td></tr>
+<tr><td>white crystal rod</td><td>25</td><td>floating in the Drive Bubble</td></tr>
+<tr><td>clear crystal rod</td><td>25</td><td>in the projector in the Observatory</td></tr>
+<tr><td>silver crystal rod</td><td>25</td><td>in the ray gun barrel</td></tr>
+</table>
+<p>Other Points</p><p>You receive 25 points for:</p><li>successfully reaching the Red Dock</li><li>entering the Drive Bubble</li><li>changing the ship's course</li><li>initiating the proper course to Earth</li></div></div>
 
 
 <h2 id="12">For Your Amusement</h2>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><p>(after you have finished the game)</p><p>Have you ever...</p><p>touched the Starcross controls after the course was set?</p><p>taken the space suit off in space?</p><p>untied your safety line while floating in space?</p><p>set R, theta, or phi once you arrived at the Artifact (or while on the way)?</p><p>said HELLO to the Starcross computer, or asked it to kill you, or given something to it?</p><p>watched the docking of the Starcross with the Artifact while floating in space?</p><p>tried dropping anything or jumping while on the outer surface of the Artifact?</p><p>shot the mechanical mouse, or watched it try to enter the Warren or climb the tree?</p><p>tried climbing down the hole in the Garage?</p><p>stepped on a disk while carrying the other, or put one disk on top of the other?</p><p>looked out the view port of the Weasel's ship (at the Green Dock)?</p><p>tried wearing the Alien space suit?</p><p>tried talking to the Weasels or their Chief?</p><p>tried pointing at or shooting the Alien Chief's wife or child?</p><p>tried giving the tattered space suit to the Chief's wife?</p><p>dropped anything in the Warren?</p><p>given anything to the Rat-ants?</p><p>tried shooting yourself, something you were carrying, or the ray gun itself with the ray gun?</p><p>put other rods into the ray gun before firing?</p><p>tried flying from the tree?</p><p>tried jumping while in one of the bubbles?</p><p>been in the inner cylinder when the lights brightened for "day" or dimmed for "night"?</p></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><p>(after you have finished the game)</p><div>Have you ever...</div><li>touched the Starcross controls after the course was set?</li><li>taken the space suit off in space?</li><li>untied your safety line while floating in space?</li><li>set R, theta, or phi once you arrived at the Artifact (or while on the way)?</li><li>said HELLO to the Starcross computer, or asked it to kill you, or given something to it?</li><li>watched the docking of the Starcross with the Artifact while floating in space?</li><li>tried dropping anything or jumping while on the outer surface of the Artifact?</li><li>shot the mechanical mouse, or watched it try to enter the Warren or climb the tree?</li><li>tried climbing down the hole in the Garage?</li><li>stepped on a disk while carrying the other, or put one disk on top of the other?</li><li>looked out the view port of the Weasel's ship (at the Green Dock)?</li><li>tried wearing the Alien space suit?</li><li>tried talking to the Weasels or their Chief?</li><li>tried pointing at or shooting the Alien Chief's wife or child?</li><li>tried giving the tattered space suit to the Chief's wife?</li><li>dropped anything in the Warren?</li><li>given anything to the Rat-ants?</li><li>tried shooting yourself, something you were carrying, or the ray gun itself with the ray gun?</li><li>put other rods into the ray gun before firing?</li><li>tried flying from the tree?</li><li>tried jumping while in one of the bubbles?</li><li>been in the inner cylinder when the lights brightened for "day" or dimmed for "night"?</li></div></div>
 
 
 <script>

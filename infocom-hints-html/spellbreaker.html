@@ -39,6 +39,15 @@ img.coverart {
 hr {
     clear: both;
 }
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+td, th {
+    border: solid;
+    padding: 0.5em 1ch;
+}
 </style>
 </head>
 <body>
@@ -2726,20 +2735,22 @@ hr {
 
 <h2 id="20">Cube Details</h2>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><pre>  Found in...       Decoration     Property        BLORPLE to...
-  Belwit Square     Moles          Earth           Packed Earth
-  Ogre Lair         Dolphins       Water           Water Room
-  Temple            Eagles         Air             Air Room
-  On Pillar         Salamanders    Fire            Fire Room
-  Plain             Grues          Dark            Dark Room
-  Hut               Spiders        Connectivity    String Room
-  Ocean Floor       Fireflies      Light           Light Room
-  Dungeon Cell      Worms          Death           Boneyard
-  Roc Nest          Rabbits        Life            Soft Room
-  Octagonal Room    Owls           Mind            No Place
-  In Pipe           Butterflies    Change          Changing Room
-  Outer Vault       Turtles        Time            Sand Room
-  Outcropping       Unicorns       Magic           Magic Room</pre></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><table><tr><th>Found in...</th><th>Decoration</th><th>Property</th><th>BLORPLE to...</th></tr>
+<tr><td>Belwit Square</td><td>Moles</td><td>Earth</td><td>Packed Earth</td></tr>
+<tr><td>Ogre Lair</td><td>Dolphins</td><td>Water</td><td>Water Room</td></tr>
+<tr><td>Temple</td><td>Eagles</td><td>Air</td><td>Air Room</td></tr>
+<tr><td>On Pillar</td><td>Salamanders</td><td>Fire</td><td>Fire Room</td></tr>
+<tr><td>Plain</td><td>Grues</td><td>Dark</td><td>Dark Room</td></tr>
+<tr><td>Hut</td><td>Spiders</td><td>Connectivity</td><td>String Room</td></tr>
+<tr><td>Ocean Floor</td><td>Fireflies</td><td>Light</td><td>Light Room</td></tr>
+<tr><td>Dungeon Cell</td><td>Worms</td><td>Death</td><td>Boneyard</td></tr>
+<tr><td>Roc Nest</td><td>Rabbits</td><td>Life</td><td>Soft Room</td></tr>
+<tr><td>Octagonal Room</td><td>Owls</td><td>Mind</td><td>No Place</td></tr>
+<tr><td>In Pipe</td><td>Butterflies</td><td>Change</td><td>Changing Room</td></tr>
+<tr><td>Outer Vault</td><td>Turtles</td><td>Time</td><td>Sand Room</td></tr>
+<tr><td>Outcropping</td><td>Unicorns</td><td>Magic</td><td>Magic Room</td></tr>
+</table>
+</div></div>
 
 
 <h2 id="21">Magic Details</h2>
@@ -2766,22 +2777,24 @@ hr {
 
 <h3 id="21.2">Details of Cubes Effects on Spells</h3>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><pre>  Spell       Cubes that increase chance of success
-  BLORPLE     (always works)
-  FROTZ       Change, Light (75% base chance)
-  GNUSTO      Change, Earth (75% base chance)
-  LESOCH      Air, Fire
-  MALYON      Fire, Life
-  REZROV      Change, Earth
-  YOMIN       Mind, Light
-  SNAVIG      Change, Dark
-  GIRGOL      (special, as spell is so powerful)
-  LISKON      Change, Earth
-  TINSOT      Water, Fire
-  JINDAK      Light, Connectivity
-  ESPNIS      Mind, Death
-  CASKLY      Change, Connectivity
-  THROCK      Life, Water</pre><p>If you have the cube that BLORPLEs you to the Magic Room, it gives an extra-strong power boost to all spells. With this cube in your possession, only the GIRGOL spell can ever fail under normal circumstances.</p></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><table><tr><th>Spell</th><th>Cubes that increase chance of success</th></tr>
+<tr><td>BLORPLE</td><td>(always works)</td></tr>
+<tr><td>FROTZ</td><td>Change, Light (75% base chance)</td></tr>
+<tr><td>GNUSTO</td><td>Change, Earth (75% base chance)</td></tr>
+<tr><td>LESOCH</td><td>Air, Fire</td></tr>
+<tr><td>MALYON</td><td>Fire, Life</td></tr>
+<tr><td>REZROV</td><td>Change, Earth</td></tr>
+<tr><td>YOMIN</td><td>Mind, Light</td></tr>
+<tr><td>SNAVIG</td><td>Change, Dark</td></tr>
+<tr><td>GIRGOL</td><td>(special, as spell is so powerful)</td></tr>
+<tr><td>LISKON</td><td>Change, Earth</td></tr>
+<tr><td>TINSOT</td><td>Water, Fire</td></tr>
+<tr><td>JINDAK</td><td>Light, Connectivity</td></tr>
+<tr><td>ESPNIS</td><td>Mind, Death</td></tr>
+<tr><td>CASKLY</td><td>Change, Connectivity</td></tr>
+<tr><td>THROCK</td><td>Life, Water</td></tr>
+</table>
+<li>If you have the cube that BLORPLEs you to the Magic Room, it gives an extra-strong power boost to all spells. With this cube in your possession, only the GIRGOL spell can ever fail under normal circumstances.</li></div></div>
 
 
 <h3 id="21.3">When I use a spell on a scroll, the scroll disappears and I can't use the spell again. Help!</h3>
@@ -2799,46 +2812,50 @@ hr {
 
 <h3 id="21.4">Spells and Their Locations</h3>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><pre>  Spell       Location
-  GNUSTO      Your spell book.
-  REZROV      Your spell book.
-  FROTZ       Your spell book.
-  YOMIN       Your spell book.
-  JINDAK      Your spell book.
-  MALYON      Your spell book.
-  LESOCH      Your spell book.
-  BLORPLE     Your spell book after the shadow leaves the Council Chamber.
-  THROCK      At Cliff Middle.
-  CASKLY      In Roc Nest.
-  GIRGOL      In the zipper in Ruins Room.
-  ESPNIS      At Ogre's Lair.
-  LISKON      In the bottle in mid-ocean.
-  TINSOT      At the Glacier.
-  SNAVIG      In the moldy book after you CASKLY it.</pre></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><table><tr><th>Spell</th><th>Location</th></tr>
+<tr><td>GNUSTO</td><td>Your spell book.</td></tr>
+<tr><td>REZROV</td><td>Your spell book.</td></tr>
+<tr><td>FROTZ</td><td>Your spell book.</td></tr>
+<tr><td>YOMIN</td><td>Your spell book.</td></tr>
+<tr><td>JINDAK</td><td>Your spell book.</td></tr>
+<tr><td>MALYON</td><td>Your spell book.</td></tr>
+<tr><td>LESOCH</td><td>Your spell book.</td></tr>
+<tr><td>BLORPLE</td><td>Your spell book after the shadow leaves the Council Chamber.</td></tr>
+<tr><td>THROCK</td><td>At Cliff Middle.</td></tr>
+<tr><td>CASKLY</td><td>In Roc Nest.</td></tr>
+<tr><td>GIRGOL</td><td>In the zipper in Ruins Room.</td></tr>
+<tr><td>ESPNIS</td><td>At Ogre's Lair.</td></tr>
+<tr><td>LISKON</td><td>In the bottle in mid-ocean.</td></tr>
+<tr><td>TINSOT</td><td>At the Glacier.</td></tr>
+<tr><td>SNAVIG</td><td>In the moldy book after you CASKLY it.</td></tr>
+</table>
+</div></div>
 
 
 <h2 id="22">How the Points Are Scored</h2>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><pre>  Points  Action
-    25    getting each of 13 cubes, for a total of 325.
-    15    reading or using BLORPLE the first time.
-    10    getting the zipper.
-    10    getting the flimsy scroll.
-    10    getting the dirty scroll.
-    10    getting the stained scroll.
-    10    getting the dusty scroll.
-    10    getting the box.
-    10    getting the damp scroll.
-    10    getting the white scroll.
-    10    getting the blue carpet.
-    10    getting the moldy book.
-    15    CASKLYing the moldy book.
-    10    getting the compass rose.
-    25    answering Belboz and getting the key.
-    10    getting the vellum scroll.
-    25    establishing the past at Dungeon Cell.
-    25    establishing the past at Ruins Room.
-    50    saving the world (but destroying magic).</pre></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><table><tr><th>Points</th><th>Action</th></tr>
+<tr><td>25</td><td>getting each of 13 cubes, for a total of 325.</td></tr>
+<tr><td>15</td><td>reading or using BLORPLE the first time.</td></tr>
+<tr><td>10</td><td>getting the zipper.</td></tr>
+<tr><td>10</td><td>getting the flimsy scroll.</td></tr>
+<tr><td>10</td><td>getting the dirty scroll.</td></tr>
+<tr><td>10</td><td>getting the stained scroll.</td></tr>
+<tr><td>10</td><td>getting the dusty scroll.</td></tr>
+<tr><td>10</td><td>getting the box.</td></tr>
+<tr><td>10</td><td>getting the damp scroll.</td></tr>
+<tr><td>10</td><td>getting the white scroll.</td></tr>
+<tr><td>10</td><td>getting the blue carpet.</td></tr>
+<tr><td>10</td><td>getting the moldy book.</td></tr>
+<tr><td>15</td><td>CASKLYing the moldy book.</td></tr>
+<tr><td>10</td><td>getting the compass rose.</td></tr>
+<tr><td>25</td><td>answering Belboz and getting the key.</td></tr>
+<tr><td>10</td><td>getting the vellum scroll.</td></tr>
+<tr><td>25</td><td>establishing the past at Dungeon Cell.</td></tr>
+<tr><td>25</td><td>establishing the past at Ruins Room.</td></tr>
+<tr><td>50</td><td>saving the world (but destroying magic).</td></tr>
+</table>
+</div></div>
 
 
 <h2 id="23">For Your Amusement</h2>
@@ -2846,12 +2863,12 @@ hr {
 
 <h3 id="23.1">What did we name the cubes here at Infocom?</h3>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><p>Dave gave them boring names like "Earth" or "Air."</p><p>Gary gave them all incomprehensible (to others) single-letter names, because he hates typing.</p><p>Max named one "Ohio" because he was looking for a 4-letter synonym for No Place. (Max has never visited Ohio, either.)</p><p>Spike named them "cube1" through "cube13" because, while he isn't wildly imaginative, he is very smart.</p><p>Liz named the Fire Room cube "Bob" after her husband.</p><p>Amy named the Dark Room cube "Inky."</p><p>Suzanne named the Boneyard cube "Camels" after her cigarettes.</p></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><li>Dave gave them boring names like "Earth" or "Air."</li><li>Gary gave them all incomprehensible (to others) single-letter names, because he hates typing.</li><li>Max named one "Ohio" because he was looking for a 4-letter synonym for No Place. (Max has never visited Ohio, either.)</li><li>Spike named them "cube1" through "cube13" because, while he isn't wildly imaginative, he is very smart.</li><li>Liz named the Fire Room cube "Bob" after her husband.</li><li>Amy named the Dark Room cube "Inky."</li><li>Suzanne named the Boneyard cube "Camels" after her cigarettes.</li></div></div>
 
 
 <h3 id="23.2">Have you tried...</h3>
 
-<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><p>flying on the magic carpet to the Outcropping?</p><p>TINSOTing the magic carpet, then flying to the Outcropping?</p><p>reading the carpet label during flight?</p><p>FROTZ GRUE in a dark room (not in the Dark Room area)?</p><p>reading the pillar?</p><p>SNAVIG SERPENT or YOMIN SNAKE (before and after shrinking it?)</p><p>sleeping on the green eyed rock? Petting it?</p><p>giving fish or bread to the green eyed rock?</p><p>showing the lava fragment to the rock?</p><p>swallowing things when you're a grouper?</p><p>smelling the ogre, or smelling the ogre when you're an ogre?</p><p>trying to convince the merchant to sell you a carpet for less than 500 zorkmids?</p><p>hitting the alarm fairy?</p><p>YOMINing the shadow in the Castle?</p><p>slavering while a grue?</p><p>following the rabbit in the Meadow?</p><p>landing the magic carpet other than In Roc Nest or Guard Tower?</p><p>MALYONing the idol while you are on it?</p><p>casting a spell (other than BLORPLE) at the Plain?</p><p>following the shadow from Belwit Square?</p><p>CASKLYing the red carpet?</p><p>YOMINing any enchanter after he's been turned into an amphibian?</p><p>MALYONing the cube in the hermit's hut?</p><p>looking at a grue when you are a grue?</p><p>attacking a grue when you are a grue?</p><p>YOMIN GRUE?</p><p>examining the orange smoke or smelling it?</p><p>TINSOTing the glacier?</p><p>smelling the lava?</p><p>trying to sleep in the ogre's cave?</p></div></div>
+<div class="spoiler" role="button" tabindex="0" aria-expanded="false" aria-label="Reveal hint" aria-live="polite"><div aria=hidden="true"><li>flying on the magic carpet to the Outcropping?</li><li>TINSOTing the magic carpet, then flying to the Outcropping?</li><li>reading the carpet label during flight?</li><li>FROTZ GRUE in a dark room (not in the Dark Room area)?</li><li>reading the pillar?</li><li>SNAVIG SERPENT or YOMIN SNAKE (before and after shrinking it?)</li><li>sleeping on the green eyed rock? Petting it?</li><li>giving fish or bread to the green eyed rock?</li><li>showing the lava fragment to the rock?</li><li>swallowing things when you're a grouper?</li><li>smelling the ogre, or smelling the ogre when you're an ogre?</li><li>trying to convince the merchant to sell you a carpet for less than 500 zorkmids?</li><li>hitting the alarm fairy?</li><li>YOMINing the shadow in the Castle?</li><li>slavering while a grue?</li><li>following the rabbit in the Meadow?</li><li>landing the magic carpet other than In Roc Nest or Guard Tower?</li><li>MALYONing the idol while you are on it?</li><li>casting a spell (other than BLORPLE) at the Plain?</li><li>following the shadow from Belwit Square?</li><li>CASKLYing the red carpet?</li><li>YOMINing any enchanter after he's been turned into an amphibian?</li><li>MALYONing the cube in the hermit's hut?</li><li>looking at a grue when you are a grue?</li><li>attacking a grue when you are a grue?</li><li>YOMIN GRUE?</li><li>examining the orange smoke or smelling it?</li><li>TINSOTing the glacier?</li><li>smelling the lava?</li><li>trying to sleep in the ogre's cave?</li></div></div>
 
 
 <script>
