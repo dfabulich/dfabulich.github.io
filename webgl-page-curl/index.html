@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGL Page Curl</title>
+    <style>
+      body {
+        overflow: hidden;
+        height: 100vh;
+      }
+      #curl-container {
+        position: relative;
+        width: 50vw;
+        height: 50vw;
+        overflow: hidden;
+      }
+      #html-content {
+        display: flow-root; /* Prevent child margins from collapsing outside */
+      }
+    </style>
+    <!-- html2canvas library -->
+  </head>
+  <body>
+    <div id="html-content"></div>
+
+    <!-- Or, for example, wrap the content in a curl container.
+     Remember to set `position: relative;` on the curl container! -->
+    <!-- <div id="curl-container">
+        <div id="html-content"></div>
+    </div> -->
+
+    <script type="module">
+      import html2canvas from 'https://esm.sh/html2canvas';
+      import { curl, captureScreenshotOfParentElement } from 'https://unpkg.com/webgl-page-curl@1.0.0/webgl-page-curl.js';
+      const htmlContentDiv = document.getElementById('html-content');
+      let redHTMLBodyContent =
+        `<p><button onclick="window.go()">Curl!</button></p>` +
+        `<p style="color: red;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>`.repeat(20);
+      let blueHTMLBodyContent = `<p style="color: blue;">
+            Extraordinary lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>`.repeat(20);
+
+      htmlContentDiv.innerHTML = redHTMLBodyContent;
+
+      window.go = async () => {
+        const screenshotCanvas = await captureScreenshotOfParentElement(
+          htmlContentDiv,
+          html2canvas,
+          { logging: true }
+        );
+        await curl({
+          element: htmlContentDiv,
+          screenshotCanvas: screenshotCanvas,
+          nextPageContent: blueHTMLBodyContent,
+          durationInMs: 1000,
+          logging: true,
+        });
+        console.log('Curl complete.');
+      };
+    </script>
+  </body>
+</html>
