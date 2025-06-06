@@ -32,7 +32,7 @@
 
     <script type="module">
       import html2canvas from 'https://esm.sh/html2canvas';
-      import { curl, captureScreenshotOfParentElement } from 'https://unpkg.com/webgl-page-curl@1.0.4/dist/webgl-page-curl.js';
+      import { curl, captureScreenshotOfParentElement } from 'https://unpkg.com/webgl-page-curl@1.0.5/dist/webgl-page-curl.js';
       const htmlContentDiv = document.getElementById('html-content');
       let redHTMLBodyContent =
         `<p><button onclick="window.go()">Curl!</button></p>` +
@@ -65,6 +65,7 @@
           element: htmlContentDiv,
           screenshotCanvas: screenshotCanvas,
           nextPageContent: blueHTMLBodyContent,
+          endX: 0.8,
           durationInMs: 1000,
           logging: true,
         });
