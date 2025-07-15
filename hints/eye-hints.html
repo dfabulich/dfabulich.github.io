@@ -67,10 +67,6 @@ p, li {
 <h2>Now what?</h2>
 <p>In the box below, type the list of valid words you&#39;ve found so far, then scroll down to read your hint.</p>
 <p><textarea id="words"></textarea></p>
-<p>Check the endings you&#39;ve discovered.</p>
-<div><input type="checkbox" id="satisfactory" name="satisfactory"> <label for="satisfactory">Very Satisfactory</label></div>
-<div><input type="checkbox" id="good" name="good"> <label for="good">Very Good</label></div>
-<div><input type="checkbox" id="best" name="best"> <label for="best">Best and Final</label></div>
 <h1 id="next-hint">Your next hint is…</h1>
 <section id="eye">
     You don't seem to have found the first word in this game. See "Getting Started" above.
@@ -250,14 +246,14 @@ p, li {
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span><code>LAF</code> to the Chapel, then <code>XKV</code> there.</span></span>
 </ol>
 </section>
-<section id="satisfactory-ending"><ol>
+<section id="ers-without-elg"><ol>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>&quot;Your task was to obtain a Flower.&quot; Remember?</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>That&#39;s what it said when you typed <code>END</code> earlier.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Now that you have the rose, you can <code>END</code> to unlock the satisfactory ending.</span></span>
-</ol>
-</section>
-<section id="ers-without-elg"><ol>
-    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>You&#39;ll figure out the next commands based only on your notes on what you&#39;ve found so far.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>You&#39;ll figure out the next command based only on your notes on what you&#39;ve found so far.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>When you try a few "Nothing happens" guesses, the game will suggest a hint.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>The hint says, "(There is more to discover. Think about the DORMITORY and the KITCHEN, and how you get there.)"</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Think about the Cellar, too.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>You&#39;ll need to find the way to the Store Room.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Assemble your notes on the commands that teleport you directly to rooms.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>The commands you&#39;ve found that teleport you directly to rooms are:
@@ -470,12 +466,6 @@ p, li {
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span><code>TWV</code>.</span></span>
 </ol>
 </section>
-<section id="good-ending"><ol>
-    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>The voice in the Rotunda gave you the word <code>TWV</code> to use in the Garden.</span></span>
-    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span><code>END</code> after getting the Rose with <code>XKV</code> in the Chapel and after using <code>TWV</code> to
-        get the Iris in the Garden.</span></span>
-</ol>
-</section>
 <section id="utl"><ol>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>You&#39;re missing a teleportation word.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>How do you teleport to the Lecture Hall?</span></span>
@@ -507,7 +497,14 @@ p, li {
 </ol>
 </section>
 <section id="any-extra-special-words"><ol>
-    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>You now must divine more Special Words.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>The voice in the Rotunda gave you the word <code>TWV</code> to use in the Garden.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span><code>END</code> after getting the Rose with <code>XKV</code> in the Chapel and after using <code>TWV</code> to
+        get the Iris in the Garden.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Once again, you need to figure out what to do.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Last time, after the Rose ending, you needed to guess a new word.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Try guessing a few words.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>After you try guessing a few "Nothing happens" words, the gome will print out a hint.</span></span>
+    <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>"(There is more to discover. You must divine more Special Words.)"</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Both Special Words <code>XKV</code> and <code>TWV</code> end in <code>V</code>.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>There is a reason why the words end in <code>V</code>, and you can figure it out.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>There&#39;s a <code>VKG</code> location that never gave you an official reward.</span></span>
@@ -851,7 +848,7 @@ p, li {
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span><code>APF</code></span></span>
 </ol>
 </section>
-<section id="best-ending"><ol>
+<section id="have-you-tried-"><ol>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Use the Special Word in the Library, <code>OIZ</code>.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Now that you have the three keys, you&#39;ll need to figure out the right room to use them in. Type
         <code>LKJ</code>, <code>MYE</code>, and <code>APF</code>, in order, in the right room, and something will
@@ -863,9 +860,6 @@ p, li {
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Now that the pyramid is open, you can use the Lecture Hall&#39;s Special Word <code>OGF</code>.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Now that you have three flowers, you&#39;re ready for the best ending.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span><code>END</code>.</span></span>
-</ol>
-</section>
-<section id="have-you-tried-"><ol>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>If you&#39;ve found the best and final ending, there&#39;s nothing else to do.</span></span>
     <li><span class='spoiler' role='button' tabindex='0' aria-expanded='false' aria-label='Reveal hint' aria-live='polite'><span>Just to celebrate, have you tried <code>WIN</code>?</span></span>
 </ol>
@@ -916,13 +910,7 @@ p, li {
         let firstSection = null;
         for (let sectionId of sections) {
             if (sectionId.includes("-")) {
-                if (sectionId.endsWith("-ending")) {
-                    let ending = sectionId.split("-")[0];
-                    if (!window[ending].checked) {
-                        firstSection = sectionId;
-                        break;
-                    }
-                } else if (sectionId == "ers-without-elg") {
+                if (sectionId == "ers-without-elg") {
                     if (/\bers\b/i.test(knownWords)) {
                         continue;
                     }
@@ -962,5 +950,4 @@ p, li {
     }
 
     window.words.addEventListener("input", update);
-    document.querySelectorAll("input").forEach(i => i.addEventListener("input", update));
 </script>
