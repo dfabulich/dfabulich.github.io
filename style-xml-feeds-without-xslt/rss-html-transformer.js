@@ -9,9 +9,10 @@ function h(tagName, attributes, ...children) {
 }
 
 // add <head>, hide everything to prevent flash of unstyled content (FOUC)
-document.documentElement.append(h('head', {},
+var head = h('head', {},
     h('style', {}, `rss > channel > * { display: none; }`)
-));
+);
+document.documentElement.append(head);
 
 document.addEventListener('DOMContentLoaded', function () {
     // convert elements to HTML
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // populate <head>
-    document.head.append(h('head', {},
+    head.append(h('head', {},
         h('title', {}, document.querySelector('rss > channel > title').textContent),
         h('meta', { name: "viewport", content: "width=device-width" }),
         h('style', {}, `
