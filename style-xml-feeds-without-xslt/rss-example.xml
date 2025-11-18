@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <script src="rss-html-transformer.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+  <style xmlns="http://www.w3.org/1999/xhtml">
+    rss {
+      font-family: sans-serif;
+      max-width: 70ch;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  </style>
+  <channel>
+    <title>Tech News Daily</title>
+    <link>https://technewsdaily.example.com</link>
+    <description>Your source for the latest technology news</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Nov 2025 18:00:00 GMT</lastBuildDate>
+    
+    <item>
+      <title>New AI Model Breaks Industry Benchmarks</title>
+      <description><![CDATA[
+        <p>Researchers announce a <strong>breakthrough in language processing</strong> that outperforms previous records by <em>15 percent</em>.</p>
+        <p>Learn more at <a href="https://technewsdaily.example.com/article/ai-breakthrough">Tech News Daily</a>.</p>
+      ]]></description>
+      <link>https://technewsdaily.example.com/article/ai-breakthrough</link>
+      <pubDate>Mon, 17 Nov 2025 15:30:00 GMT</pubDate>
+      <guid>urn:uuid:1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p</guid>
+    </item>
+    
+    <item>
+      <title>Major Cloud Provider Reports Service Outage</title>
+      <description><![CDATA[
+        <p>Services were <strong>unavailable for approximately two hours</strong> affecting <em>thousands of enterprise customers</em> worldwide.</p>
+        <p>Visit the <a href="https://technewsdaily.example.com/article/cloud-outage">full incident report</a> for details.</p>
+      ]]></description>
+      <link>https://technewsdaily.example.com/article/cloud-outage</link>
+      <pubDate>Mon, 17 Nov 2025 12:15:00 GMT</pubDate>
+      <guid>urn:uuid:2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q</guid>
+    </item>
+    
+    <item>
+      <title>Cybersecurity Firm Discovers New Ransomware Variant</title>
+      <description><![CDATA[
+        <p>Security researchers have identified a <strong>sophisticated malware strain</strong> targeting <em>financial institutions</em> across <em>three continents</em>.</p>
+        <p>Read the full <a href="https://technewsdaily.example.com/article/ransomware-discovery">security analysis</a> for recommendations.</p>
+      ]]></description>
+      <link>https://technewsdaily.example.com/article/ransomware-discovery</link>
+      <pubDate>Mon, 17 Nov 2025 09:45:00 GMT</pubDate>
+      <guid>urn:uuid:3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r</guid>
+    </item>
+    
+  </channel>
+</rss>

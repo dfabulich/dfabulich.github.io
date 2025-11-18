@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <script src="atom-html-transformer.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+  <style xmlns="http://www.w3.org/1999/xhtml">
+    feed {
+      font-family: sans-serif;
+      max-width: 70ch;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  </style>
+  <title>Tech News Daily</title>
+  <subtitle>hi</subtitle>
+  <author>
+    <name>dude</name>
+    <uri>https://example.com</uri>
+  </author>
+  <link href="https://technewsdaily.example.com"/>
+  <link rel="self" href="https://technewsdaily.example.com/feed.atom"/>
+  <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+  <updated>2025-11-17T18:00:00Z</updated>
+  
+  <entry>
+    <title>New AI Model Breaks Industry Benchmarks</title>
+    <link href="https://technewsdaily.example.com/article/ai-breakthrough"/>
+    <id>urn:uuid:1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p</id>
+    <updated>2025-11-17T15:30:00Z</updated>
+    <published>2025-11-17T15:30:00Z</published>
+    <summary>Researchers announce a breakthrough in language processing that outperforms previous records by 15 percent.</summary>
+    <content type="html"><![CDATA[
+      <p>Researchers announce a <strong>breakthrough in language processing</strong> that outperforms previous records by <em>15 percent</em>.</p>
+      <p>Learn more at <a href="https://technewsdaily.example.com/article/ai-breakthrough">Tech News Daily</a>.</p>
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Major Cloud Provider Reports Service Outage</title>
+    <link href="https://technewsdaily.example.com/article/cloud-outage"/>
+    <id>urn:uuid:2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q</id>
+    <updated>2025-11-17T12:15:00Z</updated>
+    <published>2025-11-17T12:15:00Z</published>
+    <summary>Services were unavailable for approximately two hours affecting thousands of enterprise customers worldwide.</summary>
+    <content type="html"><![CDATA[
+      <p>Services were <strong>unavailable for approximately two hours</strong> affecting <em>thousands of enterprise customers</em> worldwide.</p>
+      <p>Visit the <a href="https://technewsdaily.example.com/article/cloud-outage">full incident report</a> for details.</p>
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Cybersecurity Firm Discovers New Ransomware Variant</title>
+    <link href="https://technewsdaily.example.com/article/ransomware-discovery"/>
+    <id>urn:uuid:3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r</id>
+    <updated>2025-11-17T09:45:00Z</updated>
+    <published>2025-11-17T09:45:00Z</published>
+    <summary>Security researchers have identified a sophisticated malware strain targeting financial institutions across three continents.</summary>
+    <content type="html"><![CDATA[
+      <p>Security researchers have identified a <strong>sophisticated malware strain</strong> targeting <em>financial institutions</em> across <em>three continents</em>.</p>
+      <p>Read the full <a href="https://technewsdaily.example.com/article/ransomware-discovery">security analysis</a> for recommendations.</p>
+    ]]></content>
+  </entry>
+  
+</feed>
